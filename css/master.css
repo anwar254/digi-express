@@ -1,7 +1,7 @@
 :root{
     --app-brand-main: #46a949;
     --app-white: #ffffff;
-    --app-black: #000000;
+    --app-black: #4a4a4a;
     --app-gradient-1: #3bb78f;
     --app-gradient-2: #0bab64 ;
 }
@@ -11,72 +11,29 @@ body{
 main.main-container{
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: var(--app-white);
 }
+
+/* initial page */
 .wrapper-gr{
-    background-color: var(--app-gradient-1)!important;
-    background-image: linear-gradient(315deg, var(--app-gradient-1) 0%, var(--app-gradient-2) 74%);
     height: 100vh!important;
     color: var(--app-white)!important;
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    overflow: hidden;
 }
 .wrapper-gr>.country_select-container{
     width: 50%;
-    padding: 130px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
 }
-.wrapper-gr>.country_select-container>.brand{
+/* .wrapper-gr>header.dt-header{
+    margin-bottom: 40px;
+} */
+.wrapper-gr>header.dge-header>.brand{
     width: 150px;
 }
-.wrapper-gr>.country_select-container>.heading>h1.title{
-    color: var(--app-white)!important;
-    font-size: 45px;
-    font-weight: 700;
-}
-.custom-select{
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-select{
-    width: 100%;
-    box-shadow: 0 10px 25px rgba(0,0,0, .5);
-    font-size: 16px;
-    padding: 1em 6em 1em 1.5em;
-    background: var(--app-white);
-    color: #4a4a4a;
-    border: 0;
-}
-select:focus-within{
-    outline: 0;
-}
-.d-arrow{
-    background: #3b3c47;
-    display: block;
-    height: 100%;
-    width: 4rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-}
-
-.d-arrow::before, 
-.d-arrow::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.d-arrow::after{
-    border-left: .5em solid transparent;
-    border-right: .5em solid transparent;
-    border-top: .5em solid var(--app-white);
-
-    top: 50%;
+.wrapper-gr .dge-map > img{
+    width: 50%;
+    margin: 0 auto;
 }
