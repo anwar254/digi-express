@@ -153,6 +153,40 @@ main.main-container{
 }
 
 
+/* service section */
+.service-section{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0px 100px;
+}
+.sec-title {
+    position: relative;
+    color: #141d38;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-top: 15px;
+    text-transform: initial;
+    font-size: 41px;
+}
+.service-card{
+    background-color: #fff;
+    padding: 40px;
+    position: relative;
+}
+.service-card:hover, .service-card.active{
+    border-bottom: 3px solid var(--app-brand-main);
+}
+.service-card .service-title{
+    font-weight: 800;
+    color: var(--app-black);
+    font-size: 19px;
+    margin: 20px 0 10px;
+}
+.service-card .text{
+    font-size: 13px;
+}
+
 
 
 
