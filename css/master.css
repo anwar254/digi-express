@@ -37,6 +37,7 @@ main.main-container{
 .custom-select{
     position: relative;
     width: 100%;
+    margin-bottom: 20px;
 }
 select{
     width: 100%;
