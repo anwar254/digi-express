@@ -13,6 +13,11 @@ main.main-container{
     height: auto;
     background-color: var(--app-white);
 }
+.heeader{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+}
 
 /* initial page */
 .wrapper-gr{
@@ -36,4 +41,26 @@ main.main-container{
 .wrapper-gr .dge-map > img{
     width: 50%;
     margin: 0 auto;
+}
+
+
+/* service page */
+.dge-header, .navbar{
+    background-color: transparent;
+}
+.navbar-item img {
+    max-height: 11.75rem!important;
+}
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+    background-color: transparent!important;
+    color: var(--app-brand-main);
+}
+.navbar-link:not(.is-arrowless)::after {
+    border-color: var(--app-black);
+    margin-top: -.375em;
+    right: 1.125em;
+}
+.button.btn-bg-color{
+    background-color: var(--app-brand-main);
+    color: #fff;
 }
