@@ -186,6 +186,10 @@ main.main-container{
 .service-card .text{
     font-size: 13px;
 }
+.service-icon{
+    display: flex;
+    justify-content: center;
+}
 
 
 
