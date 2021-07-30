@@ -16,7 +16,7 @@ fetch('https://restcountries.eu/rest/v2/all')
                 return dt.region == "Europe";
             })
             for (let i in europe){
-                eu.innerHTML += `<li><img src="${europe[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="">${europe[i].name}</a></li>`
+                eu.innerHTML += `<li><img src="${europe[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="../pages/services.html">${europe[i].name}</a></li>`
             }
 
             const americas = data.filter(dt => {
@@ -24,7 +24,7 @@ fetch('https://restcountries.eu/rest/v2/all')
             })
 
             for (let i in americas){
-                amer.innerHTML += `<li><img src="${americas[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="">${americas[i].name}</a></li>`
+                amer.innerHTML += `<li><img src="${americas[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="../pages/services.html">${americas[i].name}</a></li>`
             }
 
             const africa = data.filter(dt => {
@@ -32,7 +32,7 @@ fetch('https://restcountries.eu/rest/v2/all')
             })
 
             for (let i in africa){
-                afr.innerHTML += `<li><img src="${africa[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="">${africa[i].name}</a></li>`
+                afr.innerHTML += `<li><img src="${africa[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="../pages/services.html">${africa[i].name}</a></li>`
             }
 
             const asia = data.filter(dt => {
@@ -40,7 +40,7 @@ fetch('https://restcountries.eu/rest/v2/all')
             })
 
             for (let i in asia){
-                asia.innerHTML += `<li><img src="${asia[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="">${asia[i].name}</a></li>`
+                asia.innerHTML += `<li><img src="${asia[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="../pages/services.html">${asia[i].name}</a></li>`
             }
         }
     )
