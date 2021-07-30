@@ -1,14 +1,19 @@
-const countrySelect = document.querySelector('#country-select');
-const countryFlag = document.querySelector('.country-flag');
+const eu = document.querySelector('.europe');
+const amer = document.querySelector('.americas');
+
+eu.innerHTML = ""
+amer.innerHTML = ""
 
 fetch('https://restcountries.eu/rest/v2/all')
     .then(res => res.json())
     .then(
         data => {
-            countryFlag.innerHTML = ""
-            for (let i = 0; i < data.length; i++){
-                countryFlag.innerHTML = `<img src=${data[i].flag} alt='${data[0].name}-flag'>`
-                countrySelect.innerHTML += `<option value="">${data[i].name}</option>`
+            const europe = data.filter(dt => {
+                return dt.region == "Europe";
+            })
+            for (let i in europe){
+                console.log(europe)
+                eu.innerHTML = `<li><img src="${europe[i].flag}" alt="Argentina" width="16" height="11">&nbsp;<a href="">${europe[i].name}</a></li>`
             }
         }
     )
