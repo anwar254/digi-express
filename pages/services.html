@@ -13,12 +13,30 @@
     </head>
     <body>
         <main class="main-container">
+            <section class="booking">
+                <div class="booking-overlay">
+                </div>
+                <div class="container" style="display: flex; justify-content: center">
+                    <div class="form-wrap">
+                        <h3 class="mob">Mobile Version</h3>
+                        <h5 class="mob">view on a desktop for the full experience</h5>
+                        <form action="">
+                            <div class="service"><label for="location">Service</label><br /><input type="text" name="location" placeholder="Phone Repair" /><br /></div>
+                            <div class="location"><label for="location">LOCATION</label><br /><input type="text" name="location" placeholder="Edinburgh, UK" /><br /></div>
+                            <div class="dates">
+                                <div class="start"><label for="arrival">START</label><br /><input name="arrival" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="10/03/2016" /></div>
+                                <div class="end"><label for="arrival">END</label><br /><input name="departure" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="05/11/2016" /></div>
+                            </div>
+                        </form><button class="btn" type="button">Book </button>
+                    </div>
+                </div>
+            </section>
             <header class="country-header">            
                 <nav class="header-top navbar navbar-default navbar-static-top hidden-xs" id="topbar">
                     <div class="container">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="header-top-item"><a href="" class="header-top-link btn-logout hidden-xs">EN</a></li>
-                            <li class="header-top-item header-cta"><a href="" class="header-top-link btn-cta hidden-xs">Book</a></li>
+                            <li class="header-top-item"><a href="../index.html" class="header-top-link btn-logout hidden-xs">EN</a></li>
+                            <li class="header-top-item header-cta" id="book"><a href="" class="header-top-link btn-cta hidden-xs">Book</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -165,208 +183,6 @@
                                 <h1 class="title">We provide the best IT solution</h1>
                             </div>
                             <div class="text">We are 100+ professional software engineers with more than <br> 10 years of experience in delivering superior products.</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="service-section">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">
-                            <div class="heading">
-                                <h1 class="title sec-title">
-                                    Hardware, Software or Mobile devices
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="tabs is-right">
-                                <ul>
-                                  <li class="is-active"><a>About</a></li>
-                                  <li><a>Mission</a></li>
-                                  <li><a>Vission</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="columns" style="margin-top: 20px;">
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/responsive (1).png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/cctv.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/wifi.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/ux.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/web.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/group.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/warranty.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/lan.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns" style="margin-top: 20px;">
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/payment-terminal.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/software.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="../images/programming.png" alt="">
-                                </div>
-                                <div class="service-title">
-                                    <p>Lorem, ipsum dolor sit </p>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus nemo deserunt quia quisquam,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-            </section>
-
-            <section calss="dt-section-2">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column"></div>
-                        <div class="column"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bottom_cta">
-                <div class="container">
-                    <div class="cta-cotainer">
-                        <div class="columns">
-                            <div class="column is-three-quarters">
-                                <div class="heading">
-                                    <h1 class="title is-capitalized is-size-2">start your journey with us</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis corporis nostrum necessitatibus adipisci nisi</p>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="control inp">
-                                    <button class="button  is-primary">Book</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
