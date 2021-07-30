@@ -25,29 +25,92 @@ main.main-container{
 }
 
 /* initial page */
-.wrapper-gr{
-    height: 100vh!important;
-    color: var(--app-white)!important;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    overflow: hidden;
-}
-.wrapper-gr>.country_select-container{
-    width: 50%;
-    padding: 40px 20px 20px 20px;
-}
-/* .wrapper-gr>header.dt-header{
-    margin-bottom: 40px;
-} */
-.wrapper-gr>header.dge-header>.brand{
-    width: 150px;
-}
-.wrapper-gr .dge-map > img{
-    width: 50%;
-    margin: 0 auto;
+
+@media (min-width: 1600px){
+    h4 {
+        font-size: 22px;
+    }
 }
 
+@media (min-width: 769px) and (min-width: 1280px){
+    h4 {
+        font-size: 1.8vw;
+    }
+}
+h4 {
+    line-height: 1.4;
+    font-size: 22px;
+}
+.country-header {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 800;
+}
+.page-product-hero.chat-api {
+    background: linear-gradient(
+180deg
+,#e5f0fa 0,#f5faff);
+    overflow: visible;
+}
+.page-product-hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: -105px;
+    padding-top: 105px;
+    text-align: center;
+    border: 0;
+    background: #4a99e2;
+    background: -webkit-linear-gradient(
+45deg
+,#54c1f4 0%,#28a7db 50%,#4a99e2 100%);
+    background: linear-gradient(
+45deg
+,#54c1f4 0%,#28a7db 50%,#4a99e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54c1f4', endColorstr='#4a99e2', GradientType=1);
+}
+.page-section, .page-section-small {
+    border-bottom: 1px solid #e9edf1;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+}
+.clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .row:after, .row:before {
+    content: " ";
+    display: table;
+}
+.text-left {
+    text-align: left;
+}
+.country-hero-heading {
+    max-width: 580px;
+    font-size: 42px;
+    line-height: 1.3em;
+    margin: 0 auto 15px;
+    font-weight: 300;
+}
+.location .country {
+    margin: 0;
+    padding: 0 0 0 26px;
+    overflow: hidden;
+}
+.content.container li {
+    margin: 0 0 10px;
+}
+.country li {
+    list-style: none;
+    background: 0 0;
+}
+.country li img {
+    margin: -4px 7px 0 -26px;
+    width: 16px;
+    height: 11px;
+}
+.country li a {
+    font-size: .9em;
+    color: #4a4a4a;
+}
 
 /* service page */
 /* .dg-header{
