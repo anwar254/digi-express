@@ -25,29 +25,6 @@ main.main-container{
 }
 
 /* initial page */
-.wrapper-gr{
-    height: 100vh!important;
-    color: var(--app-white)!important;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    overflow: hidden;
-}
-.wrapper-gr>.country_select-container{
-    width: 50%;
-    padding: 40px 20px 20px 20px;
-}
-/* .wrapper-gr>header.dt-header{
-    margin-bottom: 40px;
-} */
-.wrapper-gr>header.dge-header>.brand{
-    width: 150px;
-}
-.wrapper-gr .dge-map > img{
-    width: 50%;
-    margin: 0 auto;
-}
-
 
 @media (min-width: 1600px){
     h4 {
@@ -64,7 +41,7 @@ h4 {
     line-height: 1.4;
     font-size: 22px;
 }
-.header {
+.country-header {
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
