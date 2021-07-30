@@ -16,10 +16,10 @@ const amer = document.querySelector('.americas');
 const afr = document.querySelector('.africa');
 const asia = document.querySelector('.asia');
 
-eu.innerHTML = ""
-amer.innerHTML = ""
-afr.innerHTML = ""
-asia.innerHTML = ""
+// eu.innerHTML = ""
+// amer.innerHTML = ""
+// afr.innerHTML = ""
+// asia.innerHTML = ""
 
 fetch('https://restcountries.eu/rest/v2/all')
     .then(res => res.json())
@@ -60,4 +60,14 @@ fetch('https://restcountries.eu/rest/v2/all')
     .catch(err => console.log(err))
 
 
-    
+    const book = document.querySelector('#book');
+    const booking = document.querySelector('.booking');
+
+    book.onclick = e => {
+        e.preventDefault();
+        if(booking.style.display == "none"){
+            booking.style.display = "flex"
+        }else{
+            booking.style.display = "none"
+        }
+    }
