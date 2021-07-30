@@ -8,6 +8,16 @@
 body{
     font-family: 'Work Sans', sans-serif!important;
 }
+.navbar{
+    max-height: 0;
+}
+.pull-left {
+    float: left;
+}
+
+.pull-left {
+    float: left!important;
+}
 .dge-header.scroll{
     position: fixed;
     z-index: 100;
@@ -286,6 +296,168 @@ footer.footer .heading{
     color: #777777;
     padding: 10px 0;
 }
+
+
+/* Booking */
+.header-top {
+    border: none;
+    margin-bottom: 0;
+    height: 30px;
+}
+
+@media (min-width: 768px){
+    .navbar-static-top {
+        border-radius: 0;
+    }
+}
+.navbar-static-top {
+    z-index: 800;
+    border-width: 0 0 1px;
+}
+@media (min-width: 768px){
+    .navbar {
+        border-radius: 4px;
+    }
+}
+.navbar {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+@media (min-width: 768px){
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        float: left!important;
+        margin: 0;
+    }
+}
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.header-top-item#telephone, html[lang*=es] .vmn.new .dashboard-showcase .browser-input.dropdown {
+    font-size: 12px;
+}
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: left;
+    }
+}
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
+.header-top-item {
+    line-height: 30px;
+    margin-left: 10px;
+}
+.new .pricing-box-tag i:hover, li, ol, p, ul {
+    color: #4c5669;
+}
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
+
+.header-top-locale, .header-top-phone {
+    font-style: italic;
+    font-weight: 400;
+}
+.header-top-link {
+    color: #9aa8bd;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+.header-main {
+    height: 60px;
+    width: auto;
+    position: relative;
+}
+@media (min-width: 768px){
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 768px){
+    .navbar-header {
+        float: left;
+    }
+}
+.header-logo {
+    margin: 13px 0;
+    height: 35px;
+    max-width: 188px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+@media (min-width: 768px){
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 768px){
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }
+}
+@media (min-width: 768px){
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none;
+    }
+}
+.navbar-collapse {
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+    -webkit-overflow-scrolling: touch;
+}
+.collapse {
+    display: none;
+}
+@media (min-width: 1200px){
+    .visible-lg, .visible-lg-block {
+        display: block!important;
+    }
+}
+.visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+    display: none!important;
+}
+
+
+
+
 
 
 
