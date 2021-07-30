@@ -5,9 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Digi Experiment</title>
-
-        <link rel="stylesheet" href="../css/bulma/css/bulma.css">
-        <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
         <link rel="stylesheet" href="../css/master.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,71 +13,148 @@
     </head>
     <body>
         <main class="main-container">
-            <header class="dge-header">
-                <div class="container">
-                    <nav class="navbar" role="navigation" aria-label="main navigation">
-                        <div class="navbar-brand">
-                        <a class="navbar-item" href="https://bulma.io">
-                            <img src="../images/IMG_7494-1.PNG" width="112" height="28">
-                        </a>
-                    
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
+            <header class="country-header">            
+                <nav class="header-top navbar navbar-default navbar-static-top hidden-xs" id="topbar">
+                    <div class="container">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="header-top-item"><a href="" class="header-top-link btn-logout hidden-xs">EN</a></li>
+                            <li class="header-top-item header-cta"><a href="" class="header-top-link btn-cta hidden-xs">Book</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="header-main" id="subbar">
+                    <div class="container"><!--DESKTOP MENU LOGO-->
+                        <div class="navbar-header logo hidden-xs">
+                            <a href="../index.html" class="pull-left"><img class="header-logo" style="width: 121.95px;height: 35px;margin-top:14px;" src="../images/IMG_7494-1.PNG" id="logo" alt="OnSched"></a>
                         </div>
-
-                        <div id="navbarBasicExample" class="navbar-menu">
-                        <div class="navbar-start">
-                    
-                            <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
-                                Services
-                            </a>
-                    
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">
-                                About
-                                </a>
-                                <a class="navbar-item">
-                                Jobs
-                                </a>
-                                <a class="navbar-item">
-                                Contact
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item">
-                                Report an issue
-                                </a>
-                            </div>
-                            </div>
-
-                            <a class="navbar-item">
-                            About us
-                            </a>
-                    
-                            <a class="navbar-item">
-                            Stores
-                            </a>
-
-                            <a class="navbar-item">
-                            Contact us
-                            </a>
+                        <!--MOBILE MENU ITEMS (NON STICKY)-->
+                        <div class="row visible-xs">
+                            <ul class="nav-mobile col-xs-12 text-right">
+                                <div class="pull-left">
+                                    <a href="../index.html"><img class="header-logo" style="width: 86.97px;height: 24.96px; margin-top:19px;" src="../images/IMG_7494-1.PNG" alt="Online Booking API OnSched"></a>                            
+                                </div>    
+                                <li><a class="header-main-link" href="pricing-slider/index.html"><span class="link-title">Services</span></a></li>
+                                <li><a class="header-main-link" href="enterprise.html"><span class="link-title">About us</span></a></li>
+                                <!--<li><a class="header-main-link" href="#"><span class="link-title">Developers</span></a></li>-->
+                            </ul>
                         </div>
-                    
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button btn-bg-color">
-                                <strong>Book Now</strong>
+                        <!-- END MOBILE MENU (NON STICKY) --> 
+    
+                        <!-- Desktop Menu --> 
+                        <div class="visible-md visible-lg navbar-collapse collapse navigation" id="subbar-navigation">
+                            <!-- Main Header Nav --> 
+                            <ul class="nav navbar-nav navbar-right">
+                                <!-- START of MEGA MENU 93 ->  194 --> 
+                                <li class="dropdown js-dropdown-toggle">
+                                <a class="header-main-link">
+                                    <span class="link-title">
+                                        Services                          </span>
+                                    <i class="fa fa-angle-down"></i>
                                 </a>
-                            </div>
-                            </div>
+                                <!--<div class="dropdown-menu products">
+                                    <div class="dropdown-products" role="menu" aria-labelledby="productMenu">
+                                        <div class="dropdown-content new">
+                                            <div class="row products-new">
+                                                <div class="col-md-products-5">
+                                                    <h4 style="padding-left:12px; padding-bottom:7px;">About us</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="idemo.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/sms.svg">
+                                                                </div>
+                                                                <h4>Small Business</h4>
+                                                                <p>Self serve online booking perfect for small service based professionals</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="team.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/voice1.svg">
+                                                                </div>
+                                                                <h4>Teams</h4>
+                                                                <p>The #1 online scheduling solution for teams of all sizes</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="enterprise.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/vmn.svg">
+                                                                </div>
+                                                                <h4>Enterprise</h4>
+                                                                <p>See why forward thinking enterprises choose to work with OnSched</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/chat.svg">
+                                                                </div>
+                                                                <h4>API</h4>
+                                                                <p>Build online booking into own application or organization</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-products-5">
+                                                    <h4 style="padding-left:12px; padding-bottom:7px;">Approach</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="platform.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/verify.svg">
+                                                                </div>
+                                                                <h4>Booking Widget</h4>
+                                                                <p>Check out our beautiful booking widget</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="process.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                <img src="../assets/svg/voicesip.svg">
+                                                                </div>
+                                                                <h4>Implementation Process</h4>
+                                                                <p>See exactly how we help you implement and roll out online booking</p>
+                                                            </a>
+                                                        </li>
+                                                        <!--<li>
+                                                            <a href="customers.html" class="clearfix" role="menuitem">
+                                                                <div>
+                                                                    <img src="../assets/svg/shortcode.svg">
+                                                                </div>
+                                                                <h4>Our Customers</h4>
+                                                                <p>See what our customers have to say about us</p>
+                                                            </a>
+                                                        </li>-->
+                                                        <!-- <li style="margin:0;">
+                                                            <a href="sales.html" class="clearfix" role="menuitem">
+                                                                <h5>Contact Sales</h5>
+    
+                                                            </a>
+                                                        </li>
+                                                        <li style="margin:0;">
+                                                            <a href="support.html" class="clearfix" role="menuitem">
+                                                                <h5>Contact Support</h5>
+    
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                </div> -->
+                                </li>
+                                <!-- END --> 
+                                <li class=""><a class="header-main-link" href=""><span class="link-title">About us</span></a></li>
+                                <li><a class="header-main-link" href=""><span class="link-title">Contact us</span></a></li>
+                                <li class=""><a class="header-main-link" href="" target="_blank"><span class="link-title">Help</span></a></li>
+                                <!--<li><a class="header-main-link" href="#" target="_blank"><span class="link-title">Developer</span></a></li>-->
+                            </ul>
+                        <!-- END OF DESKTOP MENU -->
                         </div>
-                        </div>
-                    </nav> 
-                </div>
+                    </div>
+                </nav>
             </header>
             <section class="hero-section">
                 <div class="hero-overlay"></div>
