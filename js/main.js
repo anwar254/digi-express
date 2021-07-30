@@ -1,6 +1,15 @@
 // const countrySelect = document.querySelector('#country-select');
 // const countryFlag = document.querySelector('.country-flag');
 
+window.addEventListener('scroll', e => {
+    const navbar = document.querySelector('header.dge-header');
+    
+    if (window.scrollY == 100){
+        navbar.style.position = 'fixed';
+        navbar.style.zIndex = 2;
+        navbar.style.backgroundColor = "#ffffff"
+    }
+})
 
 fetch('https://restcountries.eu/rest/v2/all')
     .then(res => res.json())
@@ -10,7 +19,7 @@ fetch('https://restcountries.eu/rest/v2/all')
                 return item.region;
             })
 
-            console.log(americas)
+            // console.log(americas)
             // const africa = data.filter(item => {
             //     return item.region == "Africa"
             // })
