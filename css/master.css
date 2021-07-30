@@ -74,8 +74,8 @@ h4 {
     content: " ";
     display: table;
 }
-.text-center {
-    text-align: center;
+.text-left {
+    text-align: left;
 }
 .country-hero-heading {
     max-width: 580px;
